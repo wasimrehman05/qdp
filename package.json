@@ -1,10 +1,13 @@
 {
-  "name": "vite-react-typescript-starter",
+  "name": "quick-data-point",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "homepage": "https://wasimrehman05.github.io/quick-data-point",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh pages -d build",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
