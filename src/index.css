@@ -19,3 +19,46 @@
 .animate-float-slower {
   animation: float-slower 8s ease-in-out infinite;
 }
+
+.grid-pattern {
+  background-image: radial-gradient(#2d4a8a 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: -19px -19px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add gradient text animation */
+.gradient-text {
+  background: linear-gradient(90deg, #60A5FA, #818CF8, #60A5FA);
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: gradient 3s linear infinite;
+}
+
+@keyframes gradient {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* Add smooth transitions */
+.transform-gpu {
+  will-change: transform;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Add hover effects */
+.floating-element {
+  transition: all 0.3s ease;
+}
+
+.floating-element:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+}

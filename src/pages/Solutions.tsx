@@ -13,7 +13,7 @@ const solutions: Solution[] = [
   {
     title: "LinkedIn Lead Generation",
     description: "Advanced profile and post interaction analysis from LinkedIn profiles. Track engagement metrics and gather valuable insights from post interactions.",
-    fullDescription: "Our LinkedIn Lead Generation solution provides comprehensive analysis of profile interactions, post engagements, and network growth. We track likes, comments, and shares across posts, analyze engagement patterns, and identify potential leads based on interaction history. This helps businesses build targeted marketing strategies and identify valuable business connections.",
+    fullDescription: "Our LinkedIn Lead Generation solution provides comprehensive analysis of profile interactions, post engagements, and network growth. We track likes, comments, and shares across posts, analyze engagement patterns, and identify potential leads based on interaction history.",
     benefits: [
       "Profile-based post tracking",
       "Engagement analytics (likes, comments)",
@@ -24,7 +24,7 @@ const solutions: Solution[] = [
   {
     title: "Quick Commerce Price Comparison",
     description: "Comprehensive price comparison across major quick commerce platforms including Zepto, Blinkit, Swiggy Instamart, BigBasket, BB Now, Flipkart Quick, and DMart.",
-    fullDescription: "Our Quick Commerce Price Comparison tool monitors prices across all major quick commerce platforms in real-time. We track product availability, price fluctuations, and delivery charges to help businesses stay competitive. The solution includes historical price tracking, stock availability alerts, and comprehensive catalog management across different platforms.",
+    fullDescription: "Our Quick Commerce Price Comparison tool monitors prices across all major quick commerce platforms in real-time. We track product availability, price fluctuations, and delivery charges to help businesses stay competitive.",
     benefits: [
       "Real-time price tracking",
       "Pan-India availability mapping",
@@ -34,20 +34,34 @@ const solutions: Solution[] = [
     ]
   },
   {
-    title: "Social Media Analytics",
-    description: "Instagram follower analytics and hashtag-based scraping solutions for comprehensive social media insights.",
-    fullDescription: "Our Social Media Analytics solution provides deep insights into Instagram follower demographics, hashtag performance, and engagement metrics. We track follower growth, analyze hashtag reach, and monitor competitor social media strategies to help businesses optimize their social media presence.",
+    title: "E-commerce Intelligence",
+    description: "Comprehensive product and pricing analysis across major e-commerce platforms including Amazon, Flipkart, Shopify stores, and Meesho.",
+    fullDescription: "Our E-commerce Intelligence solution provides detailed insights into product pricing, availability, and competitive positioning across major e-commerce platforms and Shopify stores. Track price changes, monitor stock levels, analyze customer reviews, and gain insights from multiple marketplaces.",
     benefits: [
-      "Profile follower analysis",
-      "Hashtag engagement tracking",
-      "Trend analysis",
-      "Competitor growth monitoring"
+      "Price trend analysis across platforms",
+      "Shopify store monitoring",
+      "Stock availability tracking",
+      "Customer review monitoring",
+      "Competitor product mapping",
+      "Sales rank tracking"
+    ]
+  },
+  {
+    title: "Banking & Financial Intelligence",
+    description: "Comprehensive analysis of banking products, interest rates, and loan offerings across multiple financial institutions.",
+    fullDescription: "Our banking intelligence solution monitors interest rates, loan products, and financial offerings across major banks and financial institutions. Track changes in lending rates, compare loan terms, and analyze competitive financial products.",
+    benefits: [
+      "Real-time interest rate monitoring",
+      "Loan product comparison across banks",
+      "Fixed vs floating rate analysis",
+      "EMI and tenure tracking",
+      "Credit card offer comparison"
     ]
   },
   {
     title: "Medicine Delivery Comparison",
     description: "Price comparison across pharmaceutical delivery platforms including Apollo, PharmEasy, Flipkart Health+, and Zepto Pharmacy.",
-    fullDescription: "Our Medicine Delivery Comparison solution tracks prices and availability of medicines across major online pharmacies. We monitor delivery times, compare prices, and track discounts to help healthcare providers and consumers make informed decisions. The system also tracks prescription medicine availability and delivery coverage areas.",
+    fullDescription: "Our Medicine Delivery Comparison solution tracks prices and availability of medicines across major online pharmacies. We monitor delivery times, compare prices, and track discounts.",
     benefits: [
       "Medicine price comparison",
       "Availability tracking",
@@ -58,7 +72,7 @@ const solutions: Solution[] = [
   {
     title: "Ride Hailing Analytics",
     description: "Comprehensive analysis of ride-hailing services with price and availability comparison across different routes.",
-    fullDescription: "Our Ride Hailing Analytics solution provides real-time comparison of prices and wait times across different ride-hailing services. We track surge pricing patterns, analyze route availability, and monitor service quality metrics to help businesses optimize their transportation strategies.",
+    fullDescription: "Our Ride Hailing Analytics solution provides real-time comparison of prices and wait times across different ride-hailing services. We track surge pricing patterns and analyze route availability.",
     benefits: [
       "Real-time price comparison",
       "Route availability analysis",
@@ -69,12 +83,24 @@ const solutions: Solution[] = [
   {
     title: "Logistics Comparison",
     description: "Package transport service comparison across Delhivery, Porter, ShipRocket, and other major logistics providers.",
-    fullDescription: "Our Logistics Comparison solution analyzes shipping rates, delivery times, and service coverage across major logistics providers. We track package delivery performance, compare rates based on weight and distance, and monitor service reliability to help businesses optimize their shipping strategies.",
+    fullDescription: "Our Logistics Comparison solution analyzes shipping rates, delivery times, and service coverage across major logistics providers. We track package delivery performance and compare rates.",
     benefits: [
       "Shipping rate comparison",
       "Delivery time analysis",
       "Service coverage mapping",
       "Weight-based pricing analysis"
+    ]
+  },
+  {
+    title: "Real Estate Market Analysis",
+    description: "Detailed property listing analysis across major real estate platforms including Magicbricks, 99acres, and Housing.com.",
+    fullDescription: "Our Real Estate Market Analysis solution tracks property prices, rental rates, and market trends across different locations. Monitor new listings, price changes, and property specifications to gain comprehensive market insights.",
+    benefits: [
+      "Property price tracking",
+      "Rental rate analysis",
+      "Location-based trends",
+      "Property specification comparison",
+      "Market demand assessment"
     ]
   }
 ];
@@ -94,7 +120,7 @@ const Solutions = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-[#1a365d] to-[#2d4a8a] py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16" data-aos="fade">
+        <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-white mb-6">
             Our Scraping Solutions
           </h1>
@@ -157,7 +183,7 @@ const Solutions = () => {
         </div>
       </div>
 
-      {/* Modal for detailed view */}
+      {/* Modal */}
       {selectedSolution && (
         <div 
           className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50"
