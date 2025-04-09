@@ -38,10 +38,10 @@ function App() {
 	};
 
 	const handleEmailClick = () => {
-		window.location.href = "mailto:chanduittamsetty@quickdatapoint.com";
+		window.location.href = "mailto:partnerships@quickdatapoint.in";
 	};
 	const handleBookClick = () => {
-		window.location.href = "https://calendly.com/chanduittamsetty-quickdatapoint/30min?back=1";
+		window.location.href = "https://calendly.com/partnerships-quickdatapoint/30min?back=1";
 	};
 
 	return (
